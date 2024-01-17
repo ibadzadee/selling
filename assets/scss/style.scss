@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    a {
+        text-decoration: none;
+    }
+}
+@import './mixin/mixin';
+@import './variable/variable';
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0px 32px;
+    margin: 0 auto;
+    
+}
+
+nav {
+    width: 100%;
+    padding: 20px 0px   ;
+    .nav-center {
+        width: 100%;
+        @include display(space-between , center);
+        .icons{
+            @include display;
+            gap: 20px;
+            i{
+                font-size: 22px;
+            }
+        }
+        .contact{
+            @include display;
+            gap: 20px;
+            .first{
+                @include display;
+                gap: 10px;
+                a{
+                    color: black;
+                }
+                i{
+                    cursor: pointer;
+                    color: ;
+                }
+                &:hover{
+                    i{
+                        color: chocolate;
+                        transition: all 0.5s ease;
+                    }
+                }
+            }
+        }
+    }
+}
