@@ -7,6 +7,7 @@
         text-decoration: none;
     }
 }
+
 @import './mixin/mixin';
 @import './variable/variable';
 
@@ -15,38 +16,57 @@
     max-width: 1200px;
     padding: 0px 32px;
     margin: 0 auto;
-    
 }
 
-nav {
+header {
     width: 100%;
-    padding: 20px 0px   ;
+    padding: 20px 0px;
+    background-color: $headerColor;
+
     .nav-center {
         width: 100%;
-        @include display(space-between , center);
-        .icons{
+        @include display(space-between, center);
+
+        .icons {
             @include display;
-            gap: 20px;
-            i{
-                font-size: 22px;
+            gap: 10px;
+
+            i {
+                font-size: 18px;
+                background-color: black;
+                color: white;
+                padding: 7px 10px;
+                border-radius: 9999px;
+                &:hover {
+                    color: rgb(157, 72, 11);
+                    transition: all 0.5s ease;
+                    cursor: pointer;
+                }
             }
         }
-        .contact{
+
+        .contact {
             @include display;
             gap: 20px;
-            .first{
+
+            .first {
                 @include display;
                 gap: 10px;
-                a{
+                cursor: pointer;
+                font-size: 17px;
+
+                a {
                     color: black;
                 }
-                i{
+
+                i {
                     cursor: pointer;
-                    color: ;
+                    color: chocolate;
                 }
-                &:hover{
-                    i{
-                        color: chocolate;
+
+                &:hover {
+                    i {
+                        color: rgb(157, 72, 11);
                         transition: all 0.5s ease;
                     }
                 }

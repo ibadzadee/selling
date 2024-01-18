@@ -14,44 +14,57 @@
   margin: 0 auto;
 }
 
-nav {
+header {
   width: 100%;
   padding: 20px 0px;
+  background-color: #F8F9FA;
 }
-nav .nav-center {
+header .nav-center {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-nav .nav-center .icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-nav .nav-center .icons i {
-  font-size: 22px;
-}
-nav .nav-center .contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-nav .nav-center .contact .first {
+header .nav-center .icons {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
-nav .nav-center .contact .first a {
-  color: black;
+header .nav-center .icons i {
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 9999px;
 }
-nav .nav-center .contact .first i {
+header .nav-center .icons i:hover {
+  color: rgb(157, 72, 11);
+  transition: all 0.5s ease;
   cursor: pointer;
 }
-nav .nav-center .contact .first:hover i {
+header .nav-center .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+header .nav-center .contact .first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 17px;
+}
+header .nav-center .contact .first a {
+  color: black;
+}
+header .nav-center .contact .first i {
+  cursor: pointer;
   color: chocolate;
+}
+header .nav-center .contact .first:hover i {
+  color: rgb(157, 72, 11);
   transition: all 0.5s ease;
 }/*# sourceMappingURL=style.css.map */
